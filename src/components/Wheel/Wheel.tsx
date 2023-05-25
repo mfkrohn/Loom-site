@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Chart } from 'primereact/chart';
+import React, {useState, useEffect} from 'react';
+import {Chart} from 'primereact/chart';
 
 export default function Wheel() {
     const [chartData, setChartData] = useState({});
@@ -28,7 +28,7 @@ export default function Wheel() {
             ]
         };
         const options = {
-            cutout: '33%'
+            cutout: '33%',
         };
 
         setChartData(data);
@@ -36,8 +36,6 @@ export default function Wheel() {
     }, []);
 
     return (
-        <div className="card flex justify-content-center">
-            <Chart type="doughnut" data={chartData} options={chartOptions} className="w-full md:w-30rem" />
-        </div>
+        <Chart type="doughnut" data={chartData} options={chartOptions} className="w-full sm:w-12rem md:w-30rem"/>
     )
 }
