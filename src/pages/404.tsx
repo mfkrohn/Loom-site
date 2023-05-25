@@ -3,7 +3,7 @@ import { Link, HeadFC, PageProps } from "gatsby"
 import {StaticImage} from "gatsby-plugin-image";
 
 const pageStyles = {
-  color: "#232129",
+  color: "#dfdfdf",
   padding: "96px",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }

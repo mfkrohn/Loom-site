@@ -25,6 +25,9 @@
     "gatsby-plugin-sitemap": "^6.10.0",
     "gatsby-source-filesystem": "^5.10.0",
     "gatsby-transformer-sharp": "^5.10.0",
+    "primeflex": "^3.3.0",
+    "primeicons": "^6.0.1",
+    "primereact": "^9.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
