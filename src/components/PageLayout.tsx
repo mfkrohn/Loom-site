@@ -4,10 +4,9 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css"
 import "/node_modules/primeflex/primeflex.css"
 import {Menubar} from "primereact/menubar";
-import {MenuItem, MenuItemCommandEvent} from "primereact/menuitem";
 import {navigate} from "gatsby";
 import {StaticImage} from "gatsby-plugin-image";
-
+import {MenuItem} from "primereact/menuitem";
 
 
 export const PageLayout = ({children}: any) => {
@@ -15,8 +14,6 @@ export const PageLayout = ({children}: any) => {
     const footballLogo = <StaticImage className="m-2" src="../images/american-football.png" alt="" width={12} height={12}/>
     const basketBallLogo = <StaticImage className="m-2" src="../images/basketball.png" alt="" width={12} height={12}/>
     const canLogo = <StaticImage src="../images/daddy.png" alt="Daddy Can" placeholder={"blurred"} width={32} height={32}/>
-
-
 
     const menuItems: Array<MenuItem> = [
         {
@@ -45,7 +42,7 @@ export const PageLayout = ({children}: any) => {
     return (
         <React.Fragment>
             <Menubar start={canLogo} model={menuItems} end={"LOOM SITE BETA"} className="mb-4"/>
-            <div className="flex justify-content-center">
+            <div className="grid grid-nogutter justify-content-center">
             {children}
             </div>
         </React.Fragment>
